@@ -1,7 +1,6 @@
 'use strict';
 
-const JSONStream = require('JSONStream'),
-      config = require('config'),
+const config = require('config'),
       https = require('https'),
       proxy = require('http-proxy').createProxyServer({}),
       DigitalOcean = require('do-wrapper'),
