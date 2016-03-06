@@ -4,7 +4,7 @@
   "description": "Digital Ocean API proxy",
   "main": "server.js",
   "scripts": {
-    "forever": "forever -w server.js",
+    "forever": "forever -w -o doproxy.log server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

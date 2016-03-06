@@ -3,4 +3,4 @@
 
 const Proxy = require('./index.js');
 const proxy = Proxy('');
-proxy.listen(3000);
+proxy.listen(80);
