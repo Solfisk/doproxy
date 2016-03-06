@@ -1,3 +1,4 @@
 #!/bin/bash
 
+docker rm doproxy
 docker run -d --name doproxy -p 80:80 -v $(readlink -f $(dirname $0)/..):/doproxy -w /doproxy node:5 npm $*
