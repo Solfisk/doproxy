@@ -1,0 +1,38 @@
+{
+  "name": "doproxy",
+  "version": "1.0.0",
+  "description": "Digital Ocean API proxy",
+  "main": "server.js",
+  "scripts": {
+    "forever": "forever server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Solfisk/doproxy.git"
+  },
+  "keywords": [
+    "Digital",
+    "Ocean",
+    "API",
+    "quota",
+    "restrictions",
+    "logging"
+  ],
+  "author": "Michael Zedeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Solfisk/doproxy/issues"
+  },
+  "homepage": "https://github.com/Solfisk/doproxy#readme",
+  "dependencies": {
+    "config": "^1.19.0",
+    "do-wrapper": "^3.3.3",
+    "forever": "^0.15.1",
+    "http": "0.0.0",
+    "http-proxy": "^1.13.2",
+    "https": "^1.0.0",
+    "js-yaml": "^3.5.3",
+    "stream-buffers": "^3.0.0"
+  }
+}

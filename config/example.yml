@@ -1,0 +1,18 @@
+# You should create a configuration like this one
+# in this directory and name it local.yml.
+#
+# Add your own values.
+#
+# The token name (johndoe) also specifies
+# what the machine must be named when called
+# with the from token specified.
+#
+# The to token is the one that will be used
+# when calling Digital Ocean.
+tokens:
+  johndoe:
+    from: "some-randomly-generated-token"
+    to: "some-digitalocean-token"
+  janedoe:
+    from: "some-other-randomly-generated-token"
+    to: "some-digitalocean-token"
