@@ -39,7 +39,7 @@ module.exports = () => {
         function validate(req, obj, cb) {
           const pathname = require('url').parse(req.url).pathname,
                 match = pathname.match(/\/droplets(\/(.+$))?/),
-                droplet = (match || [])[1];
+                dropletId = (match || [])[1];
           if(!match) {
             cb(null, obj);
             return;
@@ -61,7 +61,7 @@ module.exports = () => {
                 cb('Droplet with name ' + name + ' already exists');
                 return;
               }
-              if(droplet && droplet.id && droplet.name !== name) {
+              if(dropletId && dropletId === droplet.id && droplet.name !== name) {
                 cb('The droplet ' + droplet.id + ' is protected');
                 return;
               }
@@ -85,6 +85,7 @@ module.exports = () => {
                 return;
               });
             } else {
+              console.log('Accepting PUT');
               cb(null, obj);
             }
           });
